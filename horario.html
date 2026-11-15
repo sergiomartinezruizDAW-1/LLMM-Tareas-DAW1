@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link id="tema-oscuro" rel="stylesheet" href="../CSS/oscuro.css" disabled />
+    <script src="../JS/cambiamodo.js"></script>
+    <title>Horario</title>
+</head>
+
+<body>
+    <header class="Tit">
+        <h1>Mi Instituto</h1>
+        <button onclick="CambiarModo()">Modo oscuro/claro</button>
+        <nav class="menu">
+            <button class="menu-boton" type="button">Menú ▾</button>
+            <ul class="menu-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="Formulario.html">Tutoría</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table class="tab1" border="1">
+                <thead class="fila1">
+                    <td>Hora</td>
+                    <td>Lunes</td>
+                    <td>Martes</td>
+                    <td>Miercoles</td>
+                    <td>Jueves</td>
+                    <td>Viernes</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="H">8:30-9:25</td>
+                        <td class="PROG" rowspan="2">Programación</td>
+                        <td class="SINF">SINF</td>
+                        <td class="BBDD" rowspan="2">BBDD</td>
+                        <td class="PROG" rowspan="2">Programación</td>
+                        <td class="IPE" rowspan="2">IPE I</td>
+                    </tr>
+                    <tr>
+                        <td class="H">9:25-10:20</td>
+                        <td class="Ing">Ing. prof.</td>
+                    </tr>
+                    <tr>
+                        <td class="H">10:20-11:15</td>
+                        <td class="Pro">Proyecto</td>
+                        <td class="BBDD">BBDD</td>
+                        <td class="LLMM">LLMM</td>
+                        <td class="SINF">SINF</td>
+                        <td class="DIG">Digitalización</td>
+                    </tr>
+                    <tr>
+                        <td class="H">11:15-11:45</td>
+                        <td class="recreo" colspan="5">RECREO</td>
+
+                    </tr>
+                    <tr>
+                        <td class="H">11:45-12:40</td>
+                        <td class="SINF">SINF</td>
+                        <td class="BBDD" rowspan="2">BBDD</td>
+                        <td class="PROG" rowspan="2">Programación</td>
+                        <td class="SINF">SINF</td>
+                        <td class="DIG">Digitalización</td>
+                    </tr>
+                    <tr>
+                        <td class="H">12:40-13:35</td>
+                        <td class="LLMM" rowspan="2">LLMM</td>
+                        <td class="SOS">Sostenibilidad</td>
+                        <td class="entorno" rowspan="2">Entornos de desarrollo</td>
+                    </tr>
+                    <tr>
+                        <td class="H">13:35-14:30</td>
+                        <td class="IPE">IPE I</td>
+                        <td class="SINF">SINF</td>
+                        <td class="Ing">Ing. prof.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="tab1">
+            <table border="1">
+                <thead class="fila1">
+                    <td>Módulo</td>
+                    <td>Profesor</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="PROG">Programación</td>
+                        <td class="Prof">Fernando David Gómez Aranzabe</td>
+                    </tr>
+                    <tr>
+                        <td class="Pro">Proyecto Intermodular</td>
+                        <td class="Prof">Javier Merino Blanco</td>
+                    </tr>
+                    <tr>
+                        <td class="SINF">Sistemas Informáticos</td>
+                        <td class="Prof">Jaime Alemany Rubio</td>
+                    </tr>
+                    <tr>
+                        <td class="DIG">Digitalización</td>
+                        <td class="Prof">Juan Antonio Encinas Díaz</td>
+                    </tr>
+                    <tr>
+                        <td class="LLMM">Lenguaje de Marcas</td>
+                        <td class="Prof">Juan Antonio Encinas Díaz</td>
+                    </tr>
+                    <tr>
+                        <td class="Ing">Inglés Profesional</td>
+                        <td class="Prof">María Teresa Rubio Muñoz</td>
+                    </tr>
+                    <tr>
+                        <td class="BBDD">Base de Datos</td>
+                        <td class="Prof">Alicia Velasco Fernández</td>
+                    </tr>
+                    <tr>
+                        <td class="IPE">Itinerario Personal</td>
+                        <td class="Prof">María Isabel Oliver Pérez</td>
+                    </tr>
+                    <tr>
+                        <td class="SOS">Entornos de Desarrollo</td>
+                        <td class="Prof">Francisco Javier Redondo Lorenzo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Horario DAW-1 CIFP Virgen De Gracia</p>
+    </footer>
+</body>

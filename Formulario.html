@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link id="tema-oscuro" rel="stylesheet" href="../CSS/oscuro.css" disabled />
+    <script src="../JS/cambiamodo.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header class="Tit">
+        <h1>Mi Instituto</h1>
+        <button onclick="CambiarModo()">Modo oscuro/claro</button>
+        <nav class="menu">
+            <button class="menu-boton" type="button">Menú ▾</button>
+            <ul class="menu-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="Formulario.html">Tutoría</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulario de contacto</h2>
+        <form>
+            <fieldset>
+                <legend>Cita.</legend>
+                <p>
+                    <label for="nombre">*Nombre:</label>
+                    <input type="text" id="nombre" name="Nombre" required />
+                </p>
+                <p>
+                    <label for="apellidos">*Apellidos:</label>
+                    <input type="text" id="apellidos" name="Apellidos" required />
+                </p>
+                <p>
+                    <label for="password">*Contraseña:</label>
+                    <input type="text" id="password" name="Contraseña" required />
+                </p>
+                <p>
+                    <label for="e-mail">*Correo electrónico:</label>
+                    <input type="text" id="e-mail" name="Correo electrónico" required />
+                </p>
+                <p>
+                    <label for="number">*Número de contacto:</label>
+                    <input type="number" id="number" name="Número de contacto:" required />
+                </p>
+                <p>
+                    <label for="fecha">*Fecha de tutoría</label>
+                    <input type="date" id="fecha" name="Fecha" required />
+                </p>
+                <p>
+                    <label for="hora">*Hora de tutoría</label>
+                    <!--step="60" sirve para establecer el tiempo en minutos en caso de que venga con segundos-->
+                    <input step="60" type="time" id="hora" name="Hora de tutoría" required />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Motivo/Necesidades de la tutoría</legend>
+                <p>
+                    <label for="representante">Representante/representado:</label>
+                    <select id="representante" name="representante">
+                        <option value="">Selecciona una opción</option>
+
+                        <option value="Padre">Padre</option>
+                        <option value="Madre">Madre</option>
+                        <option value="Tutor">Tutor</option>
+                        <option value="Alumno">Alumno</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="comentarios"> Comentarios: </label>
+                    <br>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="40"
+                        placeholder="Escribe aquí tus comentarios">
+                </textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Confirmación</legend>
+                <input type="submit" value="Enviar respuestas">
+                <input type="reset" value="Cancelar cita">
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>Formulario DAW-1 CIFP Virgen De Gracia</p>
+    </footer>
+</body>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/calculadora.css">
+    <script src="../JS/calculadora.js"></script>
+    <link id="tema-oscuro" rel="stylesheet" href="../CSS/oscuro.css" disabled />
+    <script src="../JS/cambiamodo.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header class="Tit">
+        <h1>Mi Instituto</h1>
+        <button onclick="CambiarModo()">Modo oscuro/claro</button>
+        <nav class="menu">
+            <button class="menu-boton" type="button">Menú ▾</button>
+            <ul class="menu-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="Formulario.html">Tutoría</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>calculadora</h1>
+        <table class="calc">
+            <thead>
+                <tr>
+                    <td colspan="4"><input type="text" id="pantalla" readonly value="0"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button onclick="escribir('7')">7</button></td>
+                    <td><button onclick="escribir('8')">8</button></td>
+                    <td><button onclick="escribir('9')">9</button></td>
+                    <td><button onclick="escribir('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir('4')">4</button></td>
+                    <td><button onclick="escribir('5')">5</button></td>
+                    <td><button onclick="escribir('6')">6</button></td>
+                    <td><button onclick="escribir('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir('1')">1</button></td>
+                    <td><button onclick="escribir('2')">2</button></td>
+                    <td><button onclick="escribir('3')">3</button></td>
+                    <td><button onclick="escribir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir('0')">0</button></td>
+                    <td><button onclick="escribir('.')">.</button></td>
+                    <td><button onclick="escribir('+')">+</button></td>
+                    <td><button onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <th colspan="4"><button onclick="borrar()">Borrar</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="footer">
+        <p>Horario DAW-1 CIFP Virgen De Gracia</p>
+    </footer>
+</body>
+
+</html>

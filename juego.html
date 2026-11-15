@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/juego.css">
+    <script src="../JS/juego.js"></script>
+    <link id="tema-oscuro" rel="stylesheet" href="../CSS/oscuro.css" disabled />
+    <script src="../JS/cambiamodo.js"></script>
+    <title>Piedra, papel o tijera</title>
+</head>
+
+<body>
+    <header class="Tit">
+        <h1>Mi Instituto</h1>
+        <button onclick="CambiarModo()">Modo oscuro/claro</button>
+        <nav class="menu">
+            <button class="menu-boton" type="button">Menú ▾</button>
+            <ul class="menu-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="Formulario.html">Tutoría</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Piedra, papel o tijera</h1>
+        <p class="instrucciones">Elige una opción y juega contra la máquina</p>
+        <div class="opciones">
+            <button type="button" onclick="jugar('piedra')">piedra</button>
+            <button type="button" onclick="jugar('papel')">papel</button>
+            <button type="button" onclick="jugar('tijera')">tijera</button>
+        </div>
+
+        <p id="marcador">Partidas jugadas: 0</p>
+        <p id="ganadas">Partidas ganadas: 0</p>
+        <p id="empatadas">Partidas empatadas: 0</p>
+        <p id="perdidas">Partidas perdidas: 0</p>
+        <section id="resultado">
+            <h2>resultado</h2>
+            <p id="jugada-jugador">tu jugada aparecerá aquí</p>
+            <p id="jugada-maquina">la jugada de la máquina aparecerá aquí</p>
+            <p id="mensaje"></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Horario DAW-1 CIFP Virgen De Gracia</p>
+    </footer>
+</body>
+
+</html>
