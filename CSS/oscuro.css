@@ -1,0 +1,136 @@
+/* ---------- General ---------- */
+body.oscuro {
+  background-color: #121212;
+  color: #e0e0e0;
+  color-scheme: dark;
+}
+
+/* ---------- Cabecera y menú ---------- */
+body.oscuro .Tit {
+  background-color: #024d35;
+}
+
+body.oscuro .menu-boton {
+  background-color: #01271c;
+}
+
+body.oscuro .menu-boton:hover {
+  background-color: #000000;
+}
+
+body.oscuro .menu-lista {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+body.oscuro .menu-lista a {
+  color: #e0e0e0;
+}
+
+body.oscuro .menu-lista a:hover {
+  background-color: #2c3e36;
+  color: #4ade9d;
+}
+
+/* ---------- Contenido principal ---------- */
+body.oscuro main {
+  background-color: #1e1e1e;
+}
+
+body.oscuro main h1 {
+  color: #4ade9d;
+}
+
+body.oscuro main a {
+  color: #4ade9d;
+}
+
+body.oscuro main img {
+  filter: brightness(0.85);
+}
+
+/* ---------- Pie de página ---------- */
+body.oscuro .footer {
+  background-color: #024d35;
+}
+
+/* ---------- Horario ---------- */
+body.oscuro .tab1 {
+  color: #1f2933;
+}
+
+body.oscuro .tab1 td {
+  border: 1px solid #1e1e1e;
+  filter: brightness(0.85);
+}
+
+body.oscuro .fila1 {
+  background-color: #024d35;
+  color: white;
+}
+
+/* ---------- Formulario ---------- */
+body.oscuro legend {
+  color: #4ade9d;
+}
+
+body.oscuro input,
+body.oscuro select,
+body.oscuro textarea {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #666666;
+}
+
+body.oscuro input[type="submit"] {
+  background-color: #04a56f;
+  color: white;
+  border: none;
+}
+
+body.oscuro input[type="submit"]:hover {
+  background-color: #036b4a;
+}
+
+body.oscuro input[type="reset"] {
+  background-color: #444444;
+  color: white;
+  border: none;
+}
+
+body.oscuro input[type="reset"]:hover {
+  background-color: #666666;
+}
+
+/* ---------- Juego ---------- */
+body.oscuro .opciones button {
+  background-color: #1e3a30;
+  color: #4ade9d;
+  border: 2px solid #04a56f;
+}
+
+body.oscuro .opciones button:hover {
+  background-color: #04a56f;
+  color: white;
+}
+
+body.oscuro #ganadas {
+  color: #4ade80;
+}
+
+body.oscuro #empatadas {
+  color: #ffb84d;
+}
+
+body.oscuro #perdidas {
+  color: #ff6b6b;
+}
+
+body.oscuro #resultado {
+  background-color: #263a32;
+}
+
+/* ---------- Calculadora ---------- */
+body.oscuro .calc {
+  background-color: #2c3a45;
+}

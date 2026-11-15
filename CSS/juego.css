@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f7f5;
+  color: #1f2933;
+}
+
+.Tit {
+  display: flex;
+  justify-content: space-between;
+  background-color: #04a56f;
+  color: white;
+}
+
+.Tit h1 {
+  margin: 0;
+  padding: 15px 20px;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+}
+
+.menu-boton {
+  background-color: #036b4a;
+  color: white;
+  padding: 0 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-boton:hover {
+  background-color: #024d35;
+}
+
+.menu-lista {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 180px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.menu-lista a {
+  display: block;
+  padding: 12px 16px;
+  color: #1f2933;
+  text-decoration: none;
+}
+
+.menu-lista a:hover {
+  background-color: #e6f6ef;
+  color: #036b4a;
+}
+
+.menu:hover .menu-lista,
+.menu:focus-within .menu-lista {
+  display: block;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+main h1 {
+  color: #036b4a;
+}
+
+.opciones button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #e6f6ef;
+  color: #036b4a;
+  border: 2px solid #04a56f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.opciones button:hover {
+  background-color: #04a56f;
+  color: white;
+}
+
+#ganadas {
+  color: green;
+}
+
+#empatadas {
+  color: orange;
+}
+
+#perdidas {
+  color: red;
+}
+
+#resultado {
+  background-color: #e6f6ef;
+  border-left: 6px solid #04a56f;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#mensaje {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #04a56f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer p {
+  margin: 0;
+}
