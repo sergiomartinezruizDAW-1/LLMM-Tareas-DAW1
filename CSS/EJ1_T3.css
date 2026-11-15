@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c7c7c7;
+}
+
+.frase1 {
+    border-color: rgb(14, 125, 159);
+    border-width: 2px;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+#sas {
+    background-color: #4dd277;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+#ses {
+    background-color: #d2c34d;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+#sis {
+    background-color: #b05ada;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sos {
+    background-image: "../IMG/sos.jpg";               
+    text-align: center;                           
+    font-family: Arial, Helvetica, sans-serif;    
+    font-style: italic;                           
+    font-weight: bold;                            
+    color: black;
+    margin: 0;
+}
