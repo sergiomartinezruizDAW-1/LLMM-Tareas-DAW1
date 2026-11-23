@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/generadorIPs.css">
+    <link id="tema-oscuro" rel="stylesheet" href="../CSS/oscuro.css" disabled />
+    <script src="../JS/generadorIPs.js"></script>
+    <script src="../JS/cambiamodo.js"></script>
+    <title>Generador de IPs</title>
+</head>
+
+<body>
+    <header class="Tit">
+        <h1>Mi Instituto</h1>
+        <button onclick="CambiarModo()">Modo oscuro/claro</button>
+        <nav class="menu">
+            <button class="menu-boton" type="button">Menú ▾</button>
+            <ul class="menu-lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="Formulario.html">Tutoría</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="generadorIPs.html">Generador de IPs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1>Generador de IP</h1>
+        <p>Simulador de una red doméstica IPv4.</p>
+
+        <section>
+            <h2>1. Generador de direcciones IP</h2>
+            <p>Red simulada <strong>192.168.1.0/24</strong></p>
+
+            <button onclick="mostrarDireccionRed()">Mostrar dirección de red</button>
+            <button onclick="mostrarPuertaEnlace()">Mostrar puerta de enlace</button>
+            <button onclick="generarIP()">Generar IP aleatoria</button>
+            <button onclick="mostrarBrodcast()">Mostrar brodcast</button>
+            <button onclick="mostrarMascara()">Mostrar máscara de red</button>
+
+            <p id="ip">0.0.0.0</p>
+        </section>
+    </main>
+    <footer class="footer">
+        
+    </footer>
+</body>
+
+</html>
